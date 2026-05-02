@@ -69,8 +69,17 @@ export default function Menu() {
 
   return (
     <div className="pb-16">
-      <div className="bg-stone-950 py-16 sm:py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+      <div className="relative bg-stone-950 py-16 sm:py-20">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=1600&h=600&fit=crop&q=70"
+            alt=""
+            className="w-full h-full object-cover opacity-20"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-stone-950/70 via-stone-950/60 to-stone-950" />
+        </div>
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <span className="text-emerald-400 text-sm font-semibold tracking-wider uppercase">Our Menu</span>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-3 mb-4">Authentic Hyderabadi Flavors</h1>
           <p className="text-stone-400 max-w-lg mx-auto text-lg">Every dish made fresh daily with hand-ground spices and traditional recipes. Tap any item to add to your order.</p>
